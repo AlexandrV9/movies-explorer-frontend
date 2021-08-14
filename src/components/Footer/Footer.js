@@ -12,7 +12,7 @@ function Footer(){
             <li class="footer__item-list"><a href="#df" class="footer__item-link">Facebook</a></li>
           </ul>
         </nav>
-      <p className="footer__copyright">&copy; 2021</p>
+      <p className="footer__copyright">&copy;2021</p>
       </div>
     </footer>
   );

@@ -1,6 +1,6 @@
 .technologies {
   background: #272727;
-  margin-bottom: 110px;
+  margin-bottom: 111px;
 }
 
 .technologies__content {
@@ -20,12 +20,14 @@
 }
 
 .technologies__subtitle {
-  margin: 0 0 100px;
+  display: block;
   font-size: 14px;
   line-height: 20px;
   text-align: center;
   letter-spacing: -0.04em;
   color: #FFFFFF;
+  max-width: 465px;
+  margin: 0 auto 100px;
 }
 
 .technologies__unordered-list {
@@ -90,12 +92,24 @@
 }
 
 @media screen and (max-width: 768px) {
+  
+  .technologies__subtitle {
+    max-width: 465px;
+    margin: 0 auto 83px;
+  }
+
+  .technologies__title-item {
+    font-size: 12px;
+  }
+}
+ 
+@media screen and (max-width: 748px){
   .technologies__unordered-list {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     row-gap: 10px;
   }
-}
+} 
 
 @media screen and (max-width: 470px) {
   .technologies__unordered-list {
@@ -107,7 +121,7 @@
 @media screen and (max-width: 390px) {
 
   .technologies {
-    margin-bottom: 70px;
+    margin-bottom: 84px;
   }
 
   .technologies__title {
@@ -117,7 +131,7 @@
   }
 
   .technologies__content {
-    padding: 70px 0;
+    padding: 57px 0;
   }
 
   .technologies__subtitle {

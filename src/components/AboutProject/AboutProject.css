@@ -1,5 +1,6 @@
 .about-the-project {
   padding-bottom: 96px;
+  padding: 0 4px 0;
 }
 
 .about-the-project__content-box {
@@ -100,6 +101,7 @@
   .column-text__title {
     font-size: 18px;
     line-height: 22px;
+    margin-bottom: 15px;
   }
 
   .left-column-text__paragraph {
@@ -108,15 +110,27 @@
   }
 
   .about-the-project__content-box {
-    margin: 60px 0 ;
+    margin: 61px 0 60px;
   }
 
   .about-the-project__table-first-column-title {
+    font-size: 11px;
     width: 100px;
+  }
+
+  .about-the-project__table-second-column-title {
+    font-size: 11px;
   }
 
   .about-the-project__table-simple-text{
     padding: 10px 0;
+    font-size: 11px;
+    line-height: 11px;
+  }
+
+  .column-text__paragraph {
+    font-size: 11px;
+    line-height: 16px;
   }
 
 }
