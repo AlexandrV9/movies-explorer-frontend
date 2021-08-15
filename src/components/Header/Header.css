@@ -41,6 +41,31 @@
   align-items: center;
 }
 
+.header__profile-title {
+  margin: 0 17px 0 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+}
+
+.header__profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__profile-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 26px;
+  background: #313131;
+  border-radius: 4px;
+}
+
+
 @media screen and (max-width: 1240px) {
   .header {
     margin: 0 50px;

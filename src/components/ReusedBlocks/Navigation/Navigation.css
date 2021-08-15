@@ -1,0 +1,30 @@
+.navbar__unordered-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+}
+
+.navbar__item-link {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: right;
+  color: #FFFFFF;
+}
+
+.navbar__item-list {
+  margin-right: 20px;
+}
+
+.navbar__item-list:last-of-type {
+  margin-right: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 52px;
+}
