@@ -44,4 +44,8 @@
   width: 100%;
 }
 
-/* background: #3DDC84; */
+@media screen and (max-width: 768px){
+  .movies-card-list__wrapper-icon {
+    top: 19px;
+  }
+}

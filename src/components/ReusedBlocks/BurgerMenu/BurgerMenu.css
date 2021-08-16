@@ -1,0 +1,243 @@
+.header__menu-unordered-list {
+  display: flex;
+  margin: 0;
+  list-style-type: none;
+  padding: 0;
+  margin-right: 50px;
+}
+
+.header__menu-list-item {
+  margin-right: 21px;
+}
+
+.header__menu-list-item:last-of-type {
+  margin-right: 0;
+}
+
+.header__menu-list-item:first-of-type {
+  display: none;
+}
+
+.header__burger-span {
+  transition: all .3s ease 0s;
+}
+
+.header__menu-link-item {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: right;
+  color: #FFFFFF;
+}
+
+.header__burger {
+  display: none;
+}
+
+.header__navbar {
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+
+@media screen and (max-width: 768px) {
+
+  .header__menu-list-item {
+    margin-right: 0;
+  }
+
+  .header__menu-list-item:first-of-type {
+    display: block;
+  }
+
+  .header__navbar {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    max-width: 520px;
+    width: 100%;
+    height: 100%;
+    background-color: #202020;
+    transition: all .5s ease 0s;
+  }
+
+  .header__navbar_active {
+    right: 0;
+  }
+  
+  .header__burger {
+    display: block;
+    position: absolute;
+    top: 26px;
+    right: 8px;
+    width: 27px;
+    height: 23px;
+    z-index: 50;
+  }
+
+  .header__profile {
+    margin-bottom: 92px;
+  }
+  .header__burger-span {
+    background-color: #FFFFFF;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    top: 9.5px;
+  }
+  .header__burger::before,
+  .header__burger::after {
+    content: '';
+    background-color: #FFFFFF;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    left: 0;
+    transition: all .3s ease 0s;
+  }
+  .header__burger::before {
+    top: 0;
+  }
+  .header__burger::after {
+    bottom: 0;
+  }
+
+  .header__burger_active {
+    top: 26px;
+    right: -5px;
+    width: 28px;
+    height: 23px;
+  }
+
+  .header__burger_active::before {
+    transform: rotate(45deg);
+    top: 9.5px
+  }
+
+  .header__burger_active::after {
+    transform: rotate(-45deg);
+    bottom: 9.5px;
+  }
+
+  .header__burger-span_active {
+    transform: scale(0);
+  }
+
+  .header__navbar {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 2;
+    justify-content:space-between;
+    align-items:center;
+    overflow: auto;
+  }
+
+  .header__menu {
+    margin-top: 159px;
+  }
+
+  .header__menu-unordered-list {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+  }
+
+  .header__menu-list-item {
+    position: relative;
+    margin-bottom: 28px;
+  }
+  .header__menu-list-item:last-of-type {
+    margin-bottom: 0;
+    padding-bottom: 28px;
+  }
+
+  .header__menu-link-item {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .header__menu-list-item:nth-of-type(2)::after {
+    content: '';
+    background-color: #FFFFFF;
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    left: 0;
+    bottom: -5px;
+  }
+
+  .header__navbar-wrapper_active::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color:#000000;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.3;
+  }
+
+}
+
+@media screen and (max-width: 520px) {
+  .header__navbar {
+    top: -100%;
+    right: 0;
+    left: 0;
+  }
+  .header__navbar_active {
+    top: 0;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .header__burger {
+    width: 23px;
+    height: 22px;
+  }
+  .header__burger::before {
+    top: 1px;
+  }
+  .header__burger_active {
+    top: 18px;
+    right: 4px;
+    width: 22px;
+    height: 22px;
+  }
+
+  .header__burger_active::before {
+    transform: rotate(45deg);
+    top: 9.5px
+  }
+
+  .header__burger_active::after {
+    transform: rotate(-45deg);
+    bottom: 9.5px;
+  }
+
+  .header__burger-span_active {
+    transform: scale(0);
+  }
+  .header__menu {
+    margin-top: 144px;
+  }
+
+  .header__menu-list-item {
+    position: relative;
+    margin-bottom: 24px;
+  }
+
+  .header__menu-list-item:nth-of-type(2)::after {
+    bottom: -8px;
+  }
+
+  .header__profile {
+    margin-bottom: 14px;
+}
+  
+}

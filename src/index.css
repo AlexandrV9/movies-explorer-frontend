@@ -14,6 +14,15 @@
   text-rendering: optimizeLegibility;
 }
 
+@media screen and (max-width: 768px) {
+  .page_lock {
+    overflow: hidden;
+  }
+}
+.page_lock {
+
+}
+
 .content-wrapper {
   max-width: 1140px;
   margin: 0 auto;
