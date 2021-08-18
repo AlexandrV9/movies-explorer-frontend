@@ -1,13 +1,4 @@
-.header {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  padding: 18px 0;
-  max-width: 1140px;
-  margin: 0 auto;
-}
-
-.header__button {
+.log-or-creat-into-account__button {
   margin: 0;
   border: none;
   padding: 8px 20px;
@@ -21,7 +12,12 @@
   color: #000000
 }
 
-.header__register-text {
+.log-or-creat-into-account__login-link {
+  text-decoration: none;
+  color: #000;
+}
+
+.log-or-creat-into-account__register-text {
   text-decoration: none;
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -32,41 +28,41 @@
   margin-right: 30px;
 }
 
-.header__logo {
-  width: 38px;
-  height: 38px;
+.log-or-creat-into-account__navbar {
+  display: flex;
+  align-items: center;
 }
 
 @media screen and (max-width: 1240px) {
-  .header {
+  .log-or-creat-into-account {
     margin: 0 50px;
   }
 }
 
 @media screen and (max-width: 1024px) {
-  .header {
+  .log-or-creat-into-account {
     margin: 0 30px;
   }
 }
 
 @media screen and (max-width: 390px) {
-  .header__register-text {
+  .log-or-creat-into-account__register-text {
     margin-right: 14px;
   }
 
-  .header {
+  .log-or-creat-into-account {
     margin: 0 14px;
   }
 
-  .header__button {
+  .log-or-creat-into-account__button {
     padding: 5px 12px;
   }
 
-  .header__button {
+  .log-or-creat-into-account__button {
     padding: 4px 9px;
   }
 
-  .header__register-text {
+  .log-or-creat-into-account__register-text {
     font-size: 10px;
     line-height: 16px;
   }
